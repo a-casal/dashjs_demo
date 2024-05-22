@@ -16,8 +16,12 @@
         <script src="dashjs-4.7.4/dash.all.min.js"></script>
         <script>
             (function(){
+                //VoD
                 var url = "https://dash.akamaized.net/envivio/EnvivioDash3/manifest.mpd";
+                //Live Viaplay
 //                var url = "https://live-dev-cdn7-tve.cdn.viaplay.tv/vp/kanal6/kanal6.isml/index.mpd";
+                //Live BBC
+                var url = "https://rdmedia.bbc.co.uk/testcard/simulcast/manifests/hevc-ctv.mpd";
                 var player = dashjs.MediaPlayer().create();
                 player.initialize(document.querySelector("#videoPlayer"), url, true);
             })();
