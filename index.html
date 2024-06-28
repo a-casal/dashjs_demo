@@ -27,6 +27,7 @@
 //              var url = "https://livesim2.dashif.org/livesim2/testpic_2s/Manifest.mpd";
                 var player = dashjs.MediaPlayer().create();
                 player.initialize(document.getElementById("videoPlayer"), url, true);
+                document.getElementById("videoPlayer").src = url;
             })();
         </script>
     </body>
