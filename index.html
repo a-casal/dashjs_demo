@@ -11,13 +11,9 @@
     </head>
     <body>
         <div>
-            <video id="videoPlayer" controls onstalled="loadSource()"></video>
+            <video id="videoPlayer" controls"></video>
         </div>
-        <script>
-        function loadSource() {
-            document.getElementById('videoPlayer').play();
-        }
-        </script>
+
         <script src="dashjs-4.7.4/dash.all.min.js"></script>
         <script>
             (function(){
@@ -26,9 +22,9 @@
                 //Live Viaplay
  //               var url = "https://live-dev-cdn7-tve.cdn.viaplay.tv/vp/kanal6/kanal6.isml/index.mpd";
                 //Live BBC
- //               var url = "https://rdmedia.bbc.co.uk/testcard/simulcast/manifests/hevc-ctv.mpd";
+                var url = "https://rdmedia.bbc.co.uk/testcard/simulcast/manifests/hevc-ctv.mpd";
                 //Test DASH-IF live stream
-                var url = "https://livesim2.dashif.org/livesim2/testpic_2s/Manifest.mpd";
+//              var url = "https://livesim2.dashif.org/livesim2/testpic_2s/Manifest.mpd";
                 var player = dashjs.MediaPlayer().create();
                 player.initialize(document.getElementById("videoPlayer"), url, true);
             })();
