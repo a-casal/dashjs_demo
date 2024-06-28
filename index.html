@@ -9,9 +9,9 @@
             }
         </style>
     </head>
-    <body onload="loadSource()">
+    <body>
         <div>
-            <video id="videoPlayer" controls></video>
+            <video id="videoPlayer" controls onloadeddata="loadSource()"></video>
         </div>
         <script>
         function loadSource() {
