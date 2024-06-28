@@ -9,10 +9,15 @@
             }
         </style>
     </head>
-    <body onload="document.getElementById('videoPlayer').src='https://rdmedia.bbc.co.uk/testcard/simulcast/manifests/hevc-ctv.mpd'">
+    <body onload="loadSource()">
         <div>
             <video id="videoPlayer" controls></video>
         </div>
+        <script>
+        function loadSource() {
+            document.getElementById('videoPlayer').src = "https://rdmedia.bbc.co.uk/testcard/simulcast/manifests/hevc-ctv.mpd";
+        }
+        </script>
         <script src="dashjs-4.7.4/dash.all.min.js"></script>
         <script>
             (function(){
