@@ -23,8 +23,7 @@
                 //Live BBC
                 var url = "https://rdmedia.bbc.co.uk/testcard/simulcast/manifests/hevc-ctv.mpd";
                 var player = dashjs.MediaPlayer().create();
- //               player.initialize(document.getElementById("videoPlayer"), url, true);
-                player.initialize(document.getElementById("videoPlayer"));
+                player.initialize(document.getElementById("videoPlayer"), url, false);
             })();
         </script>
     </body>
