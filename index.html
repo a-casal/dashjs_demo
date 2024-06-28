@@ -9,7 +9,7 @@
             }
         </style>
     </head>
-    <body>
+    <body onload="document.getElementById('videoPlayer').src='https://rdmedia.bbc.co.uk/testcard/simulcast/manifests/hevc-ctv.mpd'">
         <div>
             <video id="videoPlayer" controls></video>
         </div>
@@ -23,7 +23,8 @@
                 //Live BBC
                 var url = "https://rdmedia.bbc.co.uk/testcard/simulcast/manifests/hevc-ctv.mpd";
                 var player = dashjs.MediaPlayer().create();
-                player.initialize(document.querySelector("#videoPlayer"), url, true);
+//                player.initialize(document.querySelector("#videoPlayer"), url, true);
+                player.initialize(document.querySelector("#videoPlayer"));
             })();
         </script>
     </body>
